@@ -28,7 +28,6 @@ a = int(input("Введите 1 переменную: "))
 b = int(input("Введите 2 переменную: "))
 c = 0
 print (a, b, c)
-if a > c:
     c = a
     a = b
     b = c
