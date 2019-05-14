@@ -10,11 +10,16 @@
 def a(n, ndigits=0):
     b = 10 ** ndigits
     n = b * n
+    e = str(int(n + 1) / b)
+    d = str(int(n) / b)
     if int((n * 10) % 10) >= 5:
-        return float(int(n + 1) / b)
+        if '.0' == e[-2:]:
+            print(e[-2:])
+        return e
     else:
-        return float(int(n) / b)
-print(a(0.9939567, 1))
+        print(d)
+        return d
+
 print(a(0.9939567, 3))
 print(a(10, 4))
 print(a(0.9939567, 8))
