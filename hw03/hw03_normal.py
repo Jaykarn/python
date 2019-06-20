@@ -29,9 +29,6 @@ def shmyak(n):
     for i in range(len(n)):
         v = n[i]
         j = i
-        print(n)
-        print(v)
-        print(j)
         while (n[j-1] > v) and (j > 0):
             n[j] = n[j-1]
             j = j - 1
