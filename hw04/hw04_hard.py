@@ -25,8 +25,8 @@ for i in passwords:
 print(new_pass)
 new_pass = sorted(new_pass.items(), key=lambda item: item[1], reverse=True)
 i = 0
-while i < 10:
-    print('топ', i + 1, 'пароль:', new_pass[i])
+for password in new_pass[:10]:
+    print('топ', i + 1, 'пароль:', password)
     i += 1
 # Задание-3
 # Пользователь вводит положительное целое число больше 1
