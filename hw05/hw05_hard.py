@@ -21,7 +21,7 @@
 #    if os.path.isfile(os.path.join(BASE_PATH, i)):
 #        os.rename(os.path.join(BASE_PATH, i),
 #                  os.path.join(BASE_PATH, os.path.splitext(i)[1], i))
-
+#
 import os
 BASE_DIR = r"C:\Users\Night\Downloads"
 DIRS = os.listdir(BASE_DIR)
